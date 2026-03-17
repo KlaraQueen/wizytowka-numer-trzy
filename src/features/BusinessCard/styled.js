@@ -14,7 +14,7 @@ export const Header = styled.header`
   z-index: 100;
   max-width: 100%;
   overflow-x: hidden;
-  box-shadow: 0 1px 2px rgba(21, 42, 31, 0.04);
+  box-shadow: 0 1px 2px rgba(139, 105, 20, 0.06);
 `;
 
 export const Content = styled.main`

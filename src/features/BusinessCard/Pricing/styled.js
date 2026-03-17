@@ -45,12 +45,12 @@ export const Card = styled.div`
   background: white;
   padding: clamp(16px, 2vw, 20px);
   border-radius: ${({ theme }) => theme.radius.md};
-  box-shadow: 0 2px 8px ${({ theme }) => theme.color.shadow}, 0 0 0 1px rgba(21, 42, 31, 0.04);
+  box-shadow: 0 2px 8px ${({ theme }) => theme.color.shadow}, 0 0 0 1px rgba(139, 105, 20, 0.06);
   transition: all 0.3s ease;
   border-left: 3px solid ${({ theme }) => theme.color.primary};
 
   &:hover {
-    box-shadow: 0 8px 24px ${({ theme }) => theme.color.shadowHover}, 0 0 0 1px rgba(21, 42, 31, 0.05);
+    box-shadow: 0 8px 24px ${({ theme }) => theme.color.shadowHover}, 0 0 0 1px rgba(139, 105, 20, 0.08);
     transform: translateY(-1px);
   }
 `;

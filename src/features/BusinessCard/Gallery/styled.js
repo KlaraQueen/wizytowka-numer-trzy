@@ -4,7 +4,7 @@ export const Section = styled.section`
   padding: clamp(20px, 3vw, 28px);
   background: white;
   border-radius: ${({ theme }) => theme.radius.lg};
-  box-shadow: 0 4px 16px ${({ theme }) => theme.color.shadow}, 0 2px 6px ${({ theme }) => theme.color.shadow}, 0 0 0 1px rgba(21, 42, 31, 0.06);
+  box-shadow: 0 4px 16px ${({ theme }) => theme.color.shadow}, 0 2px 6px ${({ theme }) => theme.color.shadow}, 0 0 0 1px rgba(139, 105, 20, 0.08);
   position: relative;
   display: flex;
   flex-direction: column;
@@ -48,7 +48,7 @@ export const ImageWrapper = styled.div`
   cursor: pointer;
   border-radius: ${({ theme }) => theme.radius.md};
   overflow: hidden;
-  box-shadow: 0 4px 12px ${({ theme }) => theme.color.shadow}, 0 0 0 1px rgba(21, 42, 31, 0.04);
+  box-shadow: 0 4px 12px ${({ theme }) => theme.color.shadow}, 0 0 0 1px rgba(139, 105, 20, 0.06);
   transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
 
@@ -56,7 +56,7 @@ export const ImageWrapper = styled.div`
     content: "";
     position: absolute;
     inset: 0;
-    background: linear-gradient(to top, rgba(21, 42, 31, 0.2) 0%, transparent 50%);
+    background: linear-gradient(to top, rgba(26, 21, 16, 0.35) 0%, transparent 50%);
     opacity: 0;
     transition: opacity 0.3s ease;
   }

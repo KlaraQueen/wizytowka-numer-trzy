@@ -35,7 +35,7 @@ export const HeroOverlay = styled.div`
   right: 0;
   bottom: 0;
   background: 
-    radial-gradient(ellipse 70% 60% at 50% 50%, rgba(21, 42, 31, 0.35) 0%, transparent 70%),
+    radial-gradient(ellipse 70% 60% at 50% 50%, ${({ theme }) => theme.color.goldGlow} 0%, transparent 70%),
     linear-gradient(
       180deg,
       ${({ theme }) => theme.color.backgroundAlt} 0%,
@@ -67,15 +67,17 @@ export const TextBlock = styled.div`
 
 export const Tagline = styled.h1`
   font-size: clamp(22px, 3vw, 32px);
-  color: ${({ theme }) => theme.color.secondary};
+  color: #12100d;
   font-weight: 800;
   line-height: 1.2;
   margin: 0 0 16px;
   letter-spacing: -0.03em;
   text-shadow: 
-    0 0 8px rgba(255, 255, 255, 0.9),
-    0 0 16px rgba(255, 255, 255, 0.7),
-    0 1px 3px rgba(255, 255, 255, 0.95);
+    0 0 16px rgba(255, 255, 255, 1),
+    0 0 32px rgba(255, 255, 255, 0.8),
+    0 0 48px rgba(255, 255, 255, 0.5),
+    0 1px 4px rgba(255, 255, 255, 0.95),
+    0 2px 6px rgba(0, 0, 0, 0.25);
 
   @media (max-width: 767px) {
     margin: 0 0 10px;
@@ -84,14 +86,16 @@ export const Tagline = styled.h1`
 
 export const Description = styled.p`
   font-size: clamp(15px, 1.3vw, 17px);
-  color: ${({ theme }) => theme.color.secondary};
+  color: #12100d;
   line-height: 1.6;
   margin: 0 auto 24px;
   max-width: 520px;
   text-shadow: 
-    0 0 6px rgba(255, 255, 255, 0.9),
-    0 0 12px rgba(255, 255, 255, 0.6),
-    0 1px 2px rgba(255, 255, 255, 0.9);
+    0 0 14px rgba(255, 255, 255, 1),
+    0 0 28px rgba(255, 255, 255, 0.75),
+    0 0 40px rgba(255, 255, 255, 0.5),
+    0 1px 3px rgba(255, 255, 255, 0.9),
+    0 2px 5px rgba(0, 0, 0, 0.2);
 
   @media (max-width: 767px) {
     margin: 0 auto 16px;
@@ -109,11 +113,11 @@ export const CtaButton = styled.button`
   cursor: pointer;
   font-family: inherit;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: 0 6px 24px rgba(45, 138, 78, 0.45), 0 2px 8px rgba(21, 42, 31, 0.15);
+  box-shadow: 0 6px 24px rgba(184, 134, 11, 0.45), 0 2px 8px rgba(139, 105, 20, 0.2);
 
   &:hover {
     transform: translateY(-3px);
-    box-shadow: 0 8px 24px rgba(45, 138, 78, 0.45);
+    box-shadow: 0 12px 32px rgba(184, 134, 11, 0.5), 0 4px 12px rgba(139, 105, 20, 0.25);
   }
 
   &:active {

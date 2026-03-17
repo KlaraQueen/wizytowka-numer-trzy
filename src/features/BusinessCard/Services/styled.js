@@ -41,7 +41,7 @@ export const Card = styled.div`
   background: white;
   padding: clamp(16px, 2vw, 22px);
   border-radius: ${({ theme }) => theme.radius.lg};
-  box-shadow: 0 4px 14px ${({ theme }) => theme.color.shadow}, 0 0 0 1px rgba(21, 42, 31, 0.05);
+  box-shadow: 0 4px 14px ${({ theme }) => theme.color.shadow}, 0 0 0 1px rgba(139, 105, 20, 0.08);
   transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
   overflow: hidden;
@@ -60,7 +60,7 @@ export const Card = styled.div`
   }
 
   &:hover {
-    box-shadow: 0 16px 48px ${({ theme }) => theme.color.shadowHover}, 0 4px 12px ${({ theme }) => theme.color.shadow}, 0 0 0 1px rgba(21, 42, 31, 0.06);
+    box-shadow: 0 16px 48px ${({ theme }) => theme.color.shadowHover}, 0 4px 12px ${({ theme }) => theme.color.shadow}, 0 0 0 1px rgba(139, 105, 20, 0.1);
     transform: translateY(-4px);
 
     &::before {
@@ -75,7 +75,7 @@ export const IconWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, ${({ theme }) => theme.color.backgroundAlt} 0%, rgba(45, 138, 78, 0.08) 100%);
+  background: linear-gradient(135deg, ${({ theme }) => theme.color.backgroundAlt} 0%, rgba(184, 134, 11, 0.08) 100%);
   border-radius: ${({ theme }) => theme.radius.md};
   color: ${({ theme }) => theme.color.primary};
   font-size: 18px;

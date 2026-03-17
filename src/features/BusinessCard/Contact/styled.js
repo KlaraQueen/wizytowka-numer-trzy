@@ -1,19 +1,21 @@
 import styled from "styled-components";
 
 export const Section = styled.footer`
-  padding: clamp(18px, 2.5vw, 24px) clamp(20px, 3vw, 40px);
-  background: linear-gradient(160deg, ${({ theme }) => theme.color.secondary} 0%, #0d2218 100%);
+  padding: clamp(24px, 3vw, 36px) clamp(20px, 3vw, 40px);
+  background: ${({ theme }) => theme.color.backgroundAlt};
   border-radius: ${({ theme }) => theme.radius.lg};
-  color: white;
+  border: 1px solid rgba(184, 134, 11, 0.2);
+  box-shadow: 0 4px 20px ${({ theme }) => theme.color.shadow};
   width: 100%;
 `;
 
 export const Title = styled.h2`
-  font-size: clamp(16px, 1.8vw, 20px);
-  margin-bottom: clamp(12px, 2vw, 18px);
+  font-size: clamp(18px, 2vw, 22px);
+  margin-bottom: clamp(16px, 2.5vw, 24px);
   font-weight: 800;
   letter-spacing: -0.02em;
   text-align: center;
+  color: ${({ theme }) => theme.color.secondary};
 `;
 
 export const Wrapper = styled.div`
@@ -50,7 +52,7 @@ export const Column = styled.div`
 export const Divider = styled.div`
   width: 100%;
   height: 1px;
-  background: rgba(255, 255, 255, 0.12);
+  background: rgba(184, 134, 11, 0.2);
 
   @media (min-width: 640px) {
     width: 1px;
@@ -70,15 +72,15 @@ export const Item = styled.div`
 
 export const Icon = styled.span`
   flex-shrink: 0;
-  width: 32px;
-  height: 32px;
+  width: 36px;
+  height: 36px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(255, 255, 255, 0.08);
-  border-radius: 8px;
-  color: ${({ theme }) => theme.color.accent};
-  font-size: 16px;
+  background: rgba(184, 134, 11, 0.1);
+  border-radius: 10px;
+  color: ${({ theme }) => theme.color.primary};
+  font-size: 18px;
 `;
 
 export const Block = styled.div`
@@ -93,7 +95,7 @@ export const Block = styled.div`
 
 export const Label = styled.span`
   font-size: clamp(9px, 1vw, 11px);
-  color: rgba(255, 255, 255, 0.7);
+  color: ${({ theme }) => theme.color.textMuted};
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -103,24 +105,25 @@ export const Address = styled.span`
   font-size: clamp(12px, 1.2vw, 14px);
   line-height: 1.5;
   font-weight: 500;
+  color: ${({ theme }) => theme.color.text};
 `;
 
 export const Small = styled.span`
   font-size: clamp(10px, 1vw, 12px);
-  opacity: 0.85;
+  color: ${({ theme }) => theme.color.textMuted};
   margin-top: 2px;
   display: block;
 `;
 
 export const Link = styled.a`
-  color: white;
+  color: ${({ theme }) => theme.color.secondary};
   text-decoration: none;
   font-size: clamp(12px, 1.2vw, 14px);
   font-weight: 600;
   transition: color 0.2s ease;
 
   &:hover {
-    color: ${({ theme }) => theme.color.accent};
+    color: ${({ theme }) => theme.color.primary};
   }
 `;
 
@@ -128,37 +131,42 @@ export const Value = styled.span`
   font-size: clamp(12px, 1.2vw, 14px);
   font-weight: 500;
   line-height: 1.4;
+  color: ${({ theme }) => theme.color.text};
 `;
 
 export const SocialRow = styled.div`
   display: flex;
   justify-content: center;
   gap: 10px;
-  margin-top: clamp(16px, 2.5vw, 24px);
+  margin-top: clamp(20px, 2.5vw, 28px);
 `;
 
 export const SocialLink = styled.a`
-  width: 36px;
-  height: 36px;
+  width: 40px;
+  height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 8px;
-  color: white;
-  font-size: 15px;
+  background: white;
+  border: 1px solid rgba(184, 134, 11, 0.25);
+  border-radius: 10px;
+  color: ${({ theme }) => theme.color.primary};
+  font-size: 16px;
   transition: all 0.25s ease;
+  box-shadow: 0 2px 8px rgba(139, 105, 20, 0.08);
 
   &:hover {
-    background: ${({ theme }) => theme.color.accent};
+    background: ${({ theme }) => theme.color.primary};
     color: white;
+    border-color: ${({ theme }) => theme.color.primary};
     transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(184, 134, 11, 0.3);
   }
 `;
 
 export const Copyright = styled.p`
   font-size: clamp(10px, 1vw, 12px);
-  opacity: 0.65;
-  margin: clamp(12px, 1.5vw, 20px) 0 0;
+  color: ${({ theme }) => theme.color.textMuted};
+  margin: clamp(16px, 2vw, 24px) 0 0;
   text-align: center;
 `;

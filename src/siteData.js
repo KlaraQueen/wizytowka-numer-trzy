@@ -1,96 +1,96 @@
 export const siteData = {
-  companyName: "Eko-Design",
+  companyName: "Beauty Nails",
   ownerName: "Karolina",
 
   images: {
     hero: require("./Images/hero.jpg"),
     team: require("./Images/team.png"),
     gallery: [
-      { src: require("./Images/gallery-1.jpg"), alt: "Realizacja 1" },
-      { src: require("./Images/gallery-2.jpg"), alt: "Realizacja 2" },
-      { src: require("./Images/gallery-3.jpg"), alt: "Realizacja 3" },
-      { src: require("./Images/gallery-4.jpg"), alt: "Realizacja 4" },
+      { src: require("./Images/gallery-1.jpg"), alt: "Manicure hybrydowy" },
+      { src: require("./Images/gallery-2.jpg"), alt: "Pedicure" },
+      { src: require("./Images/gallery-3.jpg"), alt: "Nail art" },
+      { src: require("./Images/gallery-4.jpg"), alt: "Zabieg pielęgnacyjny" },
     ],
     logo: null,
   },
 
   hero: {
-    title: "Dla naszej firmy Twój ogród jest najważniejszy.",
-    subtitle: "Zajmujemy się profesjonalnym projektowaniem oraz pielęgnacją terenów zielonych. Stworzymy wymarzony ogród i zadbamy, by zachwycał przez cały rok.",
-    buttonText: "Skontaktuj się z nami",
+    title: "Twoje dłonie i stopy zasługują na najlepszą pielęgnację.",
+    subtitle: "Profesjonalny manicure, pedicure i zabiegi pielęgnacyjne. Stworzymy piękne paznokcie, które zachwycą – od klasycznego lakieru po wymyślny nail art.",
+    buttonText: "Umów się na wizytę",
   },
 
   services: {
     label: "Zapoznaj się z naszą ofertą",
-    title: "Usługi ogrodnicze",
+    title: "Usługi beauty",
     items: [
-      { icon: "flowerPot", title: "Zakładanie ogrodów", description: "Pomagamy w zakładaniu ogrodów od podstaw, zgodnie z projektem wykonanym wcześniej." },
-      { icon: "grass", title: "Trawa z rolki", description: "Przygotujemy podłoże i rozłożymy piękny trawnik – efekt w jeden dzień." },
-      { icon: "mow", title: "Koszenie traw", description: "Abonamentowe koszenia, opryski przeciw chwastom oraz nawożenie trawników." },
-      { icon: "treeBranch", title: "Sadzenie roślin", description: "Nasadzenia, zakładanie rabat, sadzenie drzew i przesadzanie roślin." },
-      { icon: "waterDrop", title: "Systemy nawadniające", description: "Kompletne instalacje podlewania ogrodów – od projektu po wykonanie." },
+      { icon: "manicure", title: "Manicure hybrydowy", description: "Trwały manicure hybrydowy z pełną pielęgnacją dłoni. Wybór spośród setek kolorów i efektów." },
+      { icon: "pedicure", title: "Pedicure", description: "Kompleksowy pedicure z peelingiem, masażem stóp i pielęgnacją paznokci. Idealny relaks po ciężkim dniu." },
+      { icon: "nailArt", title: "Nail art", description: "Ręcznie wykonywane zdobienia – od subtelnych akcentów po wymyślne wzory. Realizujemy Twoje pomysły." },
+      { icon: "extensions", title: "Przedłużanie paznokci", description: "Przedłużanie żelowe i akrylowe. Naturalny wygląd i trwałość na wiele tygodni." },
+      { icon: "care", title: "Zabiegi pielęgnacyjne", description: "Parafina, odżywki, masaże dłoni i stóp – kompleksowa regeneracja skóry i paznokci." },
     ],
   },
 
   pricing: {
     label: "Cennik",
     title: "Orientacyjne ceny usług",
-    subtitle: "Ceny mogą się różnić w zależności od zakresu i lokalizacji. Skontaktuj się po wycenę.",
+    subtitle: "Ceny mogą się różnić w zależności od rodzaju zabiegu i dodatków. Skontaktuj się po szczegóły.",
     items: [
-      { name: "Koszenie trawy", price: "od 80 zł", unit: "jednorazowe koszenie" },
-      { name: "Pielęgnacja ogrodu", price: "od 150 zł", unit: "kompleksowa pielęgnacja" },
-      { name: "Trawa z rolki", price: "od 45 zł/m²", unit: "z przygotowaniem podłoża" },
-      { name: "Zakładanie ogrodu", price: "wycena indywidualna", unit: "projekt + realizacja" },
-      { name: "System nawadniający", price: "od 2500 zł", unit: "instalacja kompletna" },
-      { name: "Dojazd", price: "3 zł/km", unit: "usługa dojazdu poza miastem" },
+      { name: "Manicure klasyczny", price: "od 60 zł", unit: "z pielęgnacją" },
+      { name: "Manicure hybrydowy", price: "od 90 zł", unit: "pełny zabieg" },
+      { name: "Pedicure", price: "od 100 zł", unit: "z peelingiem i masażem" },
+      { name: "Pedicure hybrydowy", price: "od 130 zł", unit: "kompletny zabieg" },
+      { name: "Nail art", price: "od 20 zł", unit: "za paznokieć / dodatek" },
+      { name: "Przedłużanie paznokci", price: "od 120 zł", unit: "pełny zestaw" },
     ],
   },
 
   team: {
     label: "Poznaj nas",
     title: "Nasz zespół",
-    description: "Doświadczeni fachowcy z pasją do zieleni. Tworzymy ogrody, które zachwycają – od projektu po pielęgnację przez cały rok.",
+    description: "Doświadczone stylistki paznokci z pasją do beauty. Tworzymy paznokcie, które zachwycają – od klasyki po najnowsze trendy.",
     employees: [
-      { name: "Marek Kowalski", role: "Właściciel", description: "Kieruje firmą i nadzoruje realizację projektów ogrodniczych." },
-      { name: "Katarzyna Nowak", role: "Projektantka ogrodów", description: "Tworzy projekty terenów zielonych i aranżacje roślinne." },
-      { name: "Tomasz Wiśniewski", role: "Specjalista ds. nawadniania", description: "Projektuje i montuje systemy nawadniające." },
-      { name: "Anna Lewandowska", role: "Ogrodnik – pielęgnacja", description: "Pielęgnuje ogrody i dba o rośliny przez cały rok." },
-      { name: "Piotr Dąbrowski", role: "Specjalista ds. trawników", description: "Zakłada i pielęgnuje trawniki z rolki." },
+      { name: "Karolina", role: "Właścicielka", description: "Kieruje salonem i specjalizuje się w manicure hybrydowym oraz nail art." },
+      { name: "Katarzyna", role: "Stylistka paznokci", description: "Ekspertka od pedicure i zabiegów pielęgnacyjnych dłoni i stóp." },
+      { name: "Anna", role: "Manicurystka", description: "Specjalizuje się w przedłużaniu paznokci i stylizacji hybrydowej." },
+      { name: "Magdalena", role: "Stylistka", description: "Tworzy wymyślne zdobienia i realizuje indywidualne projekty nail art." },
+      { name: "Paulina", role: "Kosmetolożka", description: "Zabiegi pielęgnacyjne, parafina i regeneracja skóry dłoni." },
     ],
   },
 
   reviews: {
     label: "Opinie Google",
-    title: "Co mówią o nas klienci",
+    title: "Co mówią o nas klientki",
     items: [
-      { author: "Anna K.", text: "Profesjonalna obsługa od A do Z. Trawnik wygląda teraz rewelacyjnie, a koszenie jest zawsze na czas. Polecam Eko-Design każdemu, kto szuka solidnej firmy ogrodniczej.", rating: 5 },
-      { author: "Tomasz M.", text: "Zakładaliśmy ogród od zera. Zespół Eko-Design wykonał projekt i realizację perfekcyjnie. Trawa z rolki, nasadzenia – wszystko zrobione solidnie. Bardzo zadowolony!", rating: 5 },
-      { author: "Magdalena W.", text: "Świetna firma! Pielęgnują nasz ogród od dwóch lat. Zawsze punktualnie, ceny fair, a efekt pracy zachwyca. Na pewno będziemy kontynuować współpracę.", rating: 5 },
+      { author: "Anna K.", text: "Profesjonalna obsługa od A do Z. Manicure hybrydowy trzyma się idealnie, a paznokcie wyglądają rewelacyjnie. Polecam Beauty Nails każdej, kto szuka solidnego salonu!", rating: 5 },
+      { author: "Tomasz M.", text: "Żona jest zachwycona! Zakupiłem jej voucher na pedicure – wróciła zrelaksowana i z pięknymi paznokciami. Na pewno wrócimy.", rating: 5 },
+      { author: "Magdalena W.", text: "Świetny salon! Chodzę od roku. Zawsze punktualnie, ceny fair, a efekt pracy zachwyca. Nail art robią mistrzowsko. Polecam!", rating: 5 },
     ],
   },
 
   about: {
     label: "O nas",
-    title: "Jakie prace ogrodnicze wykonujemy?",
-    description: "Oferta jest szeroka i można ją elastycznie dopasować do potrzeb. Zajmujemy się projektowaniem nowych terenów zielonych, renowacją oraz pielęgnacją już istniejących. W naszym zespole pracują fachowcy z wieloletnim doświadczeniem.",
+    title: "Jakie usługi beauty oferujemy?",
+    description: "Oferta jest szeroka i można ją elastycznie dopasować do potrzeb. Zajmujemy się manicure, pedicure, przedłużaniem paznokci oraz zabiegami pielęgnacyjnymi. W naszym zespole pracują stylistki z wieloletnim doświadczeniem.",
     works: [
-      "nasadzenia roślin i zabezpieczanie przed zimą",
-      "odchwaszczanie i zwalczanie szkodników",
-      "nawożenie i przycinanie drzew i krzewów",
-      "zakładanie i pielęgnacja trawników z rolki i z siewu",
-      "budowa małej architektury ogrodowej",
+      "manicure klasyczny i hybrydowy",
+      "pedicure z peelingiem i masażem",
+      "nail art – zdobienia ręczne",
+      "przedłużanie paznokci żelowe i akrylowe",
+      "zabiegi pielęgnacyjne – parafina, odżywki",
     ],
   },
 
   contact: {
     title: "Skontaktuj się",
-    address: "Eko-Design Sp. z o.o.\nul. Przykładowa 15\n22-400 Przykład",
+    address: "Beauty Nails\nul. Przykładowa 15\n22-400 Przykład",
     nip: "000-000-00-00",
     regon: "000000000",
     phone: "+48 000 000 000",
     phoneHref: "tel:+48000000000",
-    email: "przykład@biuroeco.pl",
-    emailHref: "mailto:przykład@biuroeco.pl",
+    email: "kontakt@beautynails.pl",
+    emailHref: "mailto:kontakt@beautynails.pl",
     area: "Zamość i okolice do 50 km",
     socialLinks: [
       { name: "Facebook", href: "https://facebook.com" },
@@ -101,7 +101,7 @@ export const siteData = {
   },
 
   gallery: {
-    title: "Nasze realizacje",
+    title: "Nasze prace",
   },
 
   nav: {
@@ -110,7 +110,7 @@ export const siteData = {
       { id: "uslugi", label: "Usługi" },
       { id: "cennik", label: "Cennik" },
       { id: "zespol", label: "Nasz zespół" },
-      { id: "realizacje", label: "Realizacje" },
+      { id: "realizacje", label: "Galeria" },
       { id: "opinie", label: "Opinie" },
       { id: "kontakt", label: "Kontakt" },
     ],

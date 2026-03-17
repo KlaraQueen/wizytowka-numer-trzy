@@ -72,11 +72,11 @@ export const Description = styled.p`
 export const ImageWrapper = styled.div`
   border-radius: ${({ theme }) => theme.radius.lg};
   overflow: hidden;
-  box-shadow: 0 16px 40px -12px rgba(21, 42, 31, 0.25), 0 4px 16px rgba(21, 42, 31, 0.1);
+  box-shadow: 0 16px 40px -12px rgba(139, 105, 20, 0.2), 0 4px 16px rgba(139, 105, 20, 0.1);
 
   @media (min-width: 768px) {
     border-radius: ${({ theme }) => theme.radius.xl};
-    box-shadow: 0 32px 72px -20px rgba(21, 42, 31, 0.35), 0 8px 24px rgba(21, 42, 31, 0.12), 0 0 0 1px rgba(21, 42, 31, 0.05);
+    box-shadow: 0 32px 72px -20px rgba(139, 105, 20, 0.28), 0 8px 24px rgba(139, 105, 20, 0.15), 0 0 0 1px rgba(139, 105, 20, 0.08);
   }
 `;
 
@@ -104,17 +104,17 @@ export const EmployeeCard = styled.div`
   background: white;
   padding: 12px;
   border-radius: ${({ theme }) => theme.radius.md};
-  box-shadow: 0 2px 10px ${({ theme }) => theme.color.shadow}, 0 0 0 1px rgba(21, 42, 31, 0.04);
+  box-shadow: 0 2px 10px ${({ theme }) => theme.color.shadow}, 0 0 0 1px rgba(139, 105, 20, 0.06);
   transition: all 0.3s ease;
 
   @media (min-width: 768px) {
     padding: clamp(18px, 2.5vw, 24px);
     border-radius: ${({ theme }) => theme.radius.lg};
-    box-shadow: 0 4px 14px ${({ theme }) => theme.color.shadow}, 0 0 0 1px rgba(21, 42, 31, 0.05);
+    box-shadow: 0 4px 14px ${({ theme }) => theme.color.shadow}, 0 0 0 1px rgba(139, 105, 20, 0.08);
   }
 
   &:hover {
-    box-shadow: 0 16px 40px ${({ theme }) => theme.color.shadowHover}, 0 4px 12px ${({ theme }) => theme.color.shadow}, 0 0 0 1px rgba(21, 42, 31, 0.06);
+    box-shadow: 0 16px 40px ${({ theme }) => theme.color.shadowHover}, 0 4px 12px ${({ theme }) => theme.color.shadow}, 0 0 0 1px rgba(139, 105, 20, 0.1);
     transform: translateY(-2px);
   }
 `;
@@ -137,7 +137,7 @@ export const EmployeeRole = styled.p`
   font-weight: 600;
   margin: 0 0 8px;
   padding-bottom: 8px;
-  border-bottom: 1px solid rgba(21, 42, 31, 0.08);
+  border-bottom: 1px solid rgba(139, 105, 20, 0.12);
 
   @media (min-width: 768px) {
     font-size: clamp(14px, 1.3vw, 15px);

@@ -4,7 +4,7 @@ export const Section = styled.section`
   padding: clamp(20px, 3vw, 28px);
   background: white;
   border-radius: ${({ theme }) => theme.radius.lg};
-  box-shadow: 0 4px 16px ${({ theme }) => theme.color.shadow}, 0 0 0 1px rgba(21, 42, 31, 0.05);
+  box-shadow: 0 4px 16px ${({ theme }) => theme.color.shadow}, 0 0 0 1px rgba(139, 105, 20, 0.08);
   height: fit-content;
 
   @media (max-width: 767px) {

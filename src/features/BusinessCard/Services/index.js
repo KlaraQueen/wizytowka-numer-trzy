@@ -1,14 +1,13 @@
 import * as S from "./styled";
-import { GiFlowerPot, GiGrass, GiTreeBranch, GiWaterDrop } from "react-icons/gi";
-import { MdGrass } from "react-icons/md";
+import { FaHandSparkles, FaSpa, FaPalette, FaGem, FaHeart } from "react-icons/fa6";
 import { siteData } from "../../../siteData";
 
 const iconMap = {
-  flowerPot: GiFlowerPot,
-  grass: MdGrass,
-  mow: GiGrass,
-  treeBranch: GiTreeBranch,
-  waterDrop: GiWaterDrop,
+  manicure: FaHandSparkles,
+  pedicure: FaSpa,
+  nailArt: FaPalette,
+  extensions: FaGem,
+  care: FaHeart,
 };
 
 const Services = () => {
@@ -20,7 +19,7 @@ const Services = () => {
       <S.Title>{title}</S.Title>
       <S.Grid>
         {items.map((service, index) => {
-          const Icon = iconMap[service.icon] || GiFlowerPot;
+          const Icon = iconMap[service.icon] || FaHandSparkles;
           return (
             <S.Card key={index}>
               <S.IconWrapper>
