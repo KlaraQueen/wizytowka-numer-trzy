@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.js": "/KlaraQueen/wizytowka-numer-trzy/static/js/main.21437f96.js",
+    "static/media/hero.jpg": "/KlaraQueen/wizytowka-numer-trzy/static/media/hero.0803ff1c39578c165b1a.jpg",
+    "static/media/team.png": "/KlaraQueen/wizytowka-numer-trzy/static/media/team.dfd0f5c359fb29a5a3e4.png",
+    "static/media/gallery-4.jpg": "/KlaraQueen/wizytowka-numer-trzy/static/media/gallery-4.4813d6770b933a901a63.jpg",
+    "static/media/gallery-3.jpg": "/KlaraQueen/wizytowka-numer-trzy/static/media/gallery-3.834c9c141674c6eb83e1.jpg",
+    "static/media/gallery-2.jpg": "/KlaraQueen/wizytowka-numer-trzy/static/media/gallery-2.54f3ad6f36cc1fa1510b.jpg",
+    "static/media/gallery-1.jpg": "/KlaraQueen/wizytowka-numer-trzy/static/media/gallery-1.c28782f23418a483178f.jpg",
+    "index.html": "/KlaraQueen/wizytowka-numer-trzy/index.html",
+    "main.21437f96.js.map": "/KlaraQueen/wizytowka-numer-trzy/static/js/main.21437f96.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.21437f96.js"
+  ]
+}
